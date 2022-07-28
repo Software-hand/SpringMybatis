@@ -29,6 +29,7 @@ spring:
   # 指定sql映射文件位置
   # mapper-locations: classpath:mybatis/mapper/*.xml
 
-    schema:
-      - classpath:sql/department.sql
-      - classpath:sql/employee.sql
+# 每次运行时会执行下面SQL语句创建表，第一次创建后，注销掉建表语句
+#    schema:
+#      - classpath:sql/department.sql
+#      - classpath:sql/employee.sql
