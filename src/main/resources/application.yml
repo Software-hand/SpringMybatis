@@ -29,6 +29,6 @@ spring:
   # 指定sql映射文件位置
   # mapper-locations: classpath:mybatis/mapper/*.xml
 
-#    schema:
-#      - classpath:sql/department.sql
-#      - classpath:sql/employee.sql
+    schema:
+      - classpath:sql/department.sql
+      - classpath:sql/employee.sql
