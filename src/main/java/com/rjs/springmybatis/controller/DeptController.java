@@ -1,8 +1,11 @@
-package com.rjs.SpringMybatis.controller;
+package com.rjs.springmybatis.controller;
 
 
-import com.rjs.SpringMybatis.bean.Department;
-import com.rjs.SpringMybatis.mapper.DepartmentMapper;
+import com.rjs.springmybatis.bean.Department;
+import com.rjs.springmybatis.bean.Employee;
+
+import com.rjs.springmybatis.mapper.DepartmentMapper;
+import com.rjs.springmybatis.mapper.EmployeeMapper;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +18,8 @@ public class DeptController {
     @Autowired
     DepartmentMapper departmentMapper;
 
-
+    @Autowired
+    EmployeeMapper employeeMapper;
 
 
     @GetMapping("/dept/{id}")
@@ -27,6 +31,11 @@ public class DeptController {
     public Department insertDept(Department department){
         departmentMapper.insertDept(department);
         return department;
+    }
+
+    @GetMapping("/emp/{id}")
+    public Employee getEmp(@PathVariable("id") Integer id){
+        return employeeMapper.getEmpById(id);
     }
 
 

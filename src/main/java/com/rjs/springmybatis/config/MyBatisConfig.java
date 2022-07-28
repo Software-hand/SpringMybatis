@@ -1,4 +1,4 @@
-package com.rjs.SpringMybatis.config;
+package com.rjs.springmybatis.config;
 
 import org.apache.ibatis.session.Configuration;
 import org.mybatis.spring.boot.autoconfigure.ConfigurationCustomizer;

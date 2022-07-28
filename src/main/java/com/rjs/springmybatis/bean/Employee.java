@@ -1,4 +1,4 @@
-package com.rjs.SpringMybatis.bean;
+package com.rjs.springmybatis.bean;
 
 public class Employee {
 

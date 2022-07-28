@@ -1,4 +1,4 @@
-package com.rjs.SpringMybatis.config;
+package com.rjs.springmybatis.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;

@@ -1,7 +1,7 @@
-package com.rjs.SpringMybatis.mapper;
+package com.rjs.springmybatis.mapper;
 
 
-import com.rjs.SpringMybatis.bean.Department;
+import com.rjs.springmybatis.bean.Department;
 import org.apache.ibatis.annotations.*;
 
 // 指定这是一个操作数据库的mapper
